@@ -1,4 +1,4 @@
-export function dijkstra(grid, startNode, finishNode) {
+export function dijkstraAlgorithm(grid, startNode, finishNode) {
     const visitedNodesInOrder = [];
     startNode.distance = 0;
     const unvisitedNodes = getAllNodes(grid);
