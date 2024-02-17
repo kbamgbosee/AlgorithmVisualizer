@@ -1,0 +1,66 @@
+.App {
+    text-align: center;
+  }
+  
+  .top-dashboard {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+  }
+  
+  .map-container {
+    background-color: #f0f0f0; /* Light gray background for map */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for map */
+  }
+  
+  .node {
+    width: 25px;
+    height: 25px;
+    outline: 1px solid rgb(175, 216, 248);
+    display: inline-block;
+    cursor: url('https://upload.wikimedia.org/wikipedia/commons/2/23/Pencil-tool.svg'), auto; /* Drawing tool cursor */
+  }
+  
+  .node-finish {
+    background-color: #ff6b6b; /* Updated node finish color */
+  }
+  
+  .node-start {
+    background-color: #69db7c; /* Updated node start color */
+  }
+  
+  .node-visited {
+    animation: visitedAnimation 1.5s ease-out forwards; /* Simplified animation */
+  }
+  
+  @keyframes visitedAnimation {
+    0%, 100% { transform: scale(1); background-color: #d1d8e0; } /* Light gray */
+    50% { background-color: #b3b3b3; } /* Medium gray */
+  }
+  
+  .node-wall {
+    background-color: #576574; /* Dark gray for walls */
+  }
+  
+  .node-shortest-path {
+    animation: shortestPath 1.5s ease-out forwards; /* Simplified animation */
+  }
+
+  @keyframes shortestPath {
+    0% {
+      transform: scale(0.6);
+      background-color: #62c2f9;
+    }
+    50% {
+      transform: scale(1.2);
+      background-color: #62c2f9; 
+    }
+    100% {
+      transform: scale(1.1);
+      background-color: #62c2f9; 
+    }
+  } 
+  
